@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
     <section class="section-Banner">
-      <div class="container px-0 py-lg-10 py-md-0">
+      <div class="container py-lg-10 py-md-0">
         <div class="position-relative">
           <picture>
             <source media="(min-width: 992px)" srcset="../assets/images/banner.png">
@@ -36,7 +37,7 @@
                 <source media="(min-width: 992px)" srcset="../assets/images/theme-1.png">
                 <img src="../assets/images/theme-1-sm.png" alt="theme-1" class="w-100">
               </picture>
-              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white">城市漫遊者</h3>
+              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white w-100 text-center">城市漫遊者</h3>
             </div>
           </div>
           <div class="col">
@@ -45,7 +46,7 @@
                 <source media="(min-width: 992px)" srcset="../assets/images/theme-3.png">
                 <img src="../assets/images/theme-3-sm.png" alt="theme-3" class="w-100">
               </picture>
-              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white">秘境尋蹤人</h3>
+              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white w-100 text-center">秘境尋蹤人</h3>
             </div>
           </div>
           <div class="col">
@@ -54,7 +55,7 @@
                 <source media="(min-width: 992px)" srcset="../assets/images/theme-5.png">
                 <img src="../assets/images/theme-5-sm.png" alt="theme-5" class="w-100">
               </picture>
-              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white">品味設計家</h3>
+              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white w-100 text-center">品味設計家</h3>
             </div>
           </div>
           <div class="col">
@@ -63,7 +64,7 @@
                 <source media="(min-width: 992px)" srcset="../assets/images/theme-8.png">
                 <img src="../assets/images/theme-8-sm.png" alt="theme-8" class="w-100">
               </picture>
-              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white">美食探險記</h3>
+              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white w-100 text-center">美食探險記</h3>
             </div>
           </div>
           <div class="col">
@@ -72,7 +73,7 @@
                 <source media="(min-width: 992px)" srcset="../assets/images/theme-2.png">
                 <img src="../assets/images/theme-2-sm.png" alt="theme-2" class="w-100">
               </picture>
-              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white">美學建築誌</h3>
+              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white w-100 text-center">美學建築誌</h3>
             </div>
           </div>
           <div class="col">
@@ -81,7 +82,7 @@
                 <source media="(min-width: 992px)" srcset="../assets/images/theme-4.png">
                 <img src="../assets/images/theme-4-sm.png" alt="theme-4" class="w-100">
               </picture>
-              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white">慢活生活行</h3>
+              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white w-100 text-center">慢活生活行</h3>
             </div>
           </div>
           <div class="col">
@@ -90,7 +91,7 @@
                 <source media="(min-width: 992px)" srcset="../assets/images/theme-6.png">
                 <img src="../assets/images/theme-6-sm.png" alt="theme-6" class="w-100">
               </picture>
-              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white">工藝匠心賞</h3>
+              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white w-100 text-center">工藝匠心賞</h3>
             </div>
           </div>
           <div class="col">
@@ -99,7 +100,7 @@
                 <source media="(min-width: 992px)" srcset="../assets/images/theme-7.png">
                 <img src="../assets/images/theme-7-sm.png" alt="theme-7" class="w-100">
               </picture>
-              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white">時尚先鋒派</h3>
+              <h3 class="Theme-card-title fs-lg-5 fs-6 text-white w-100 text-center">時尚先鋒派</h3>
             </div>
           </div>
         </div>
@@ -108,47 +109,87 @@
 
     <section class="section-Article">
       <div class="container py-lg-10 py-8">
-        <div class="row row-cols-lg-3 row-cols-1">
+        <div class="row d-lg-none">
           <div class="col">
             <h2 class="fs-lg-2 fs-4 mb-5">精選文章</h2>
           </div>
-          <div class="col">
-            <div class="card border-0 border-bottom border-1 border-gray-500 h-100 rounded-0">
-              <picture>
-                <source media="(min-width: 992px)" srcset="../assets/images/articles-1.png">
-                <img class="w-100" src="../assets/images/articles-1-sm.png" class="card-img-top" alt="articles-1">
-              </picture>
-              <div class="card-body p-0 py-5">
-                <h5 class="card-title text-gray-500 mb-1">私人島嶼的露營奇遇記</h5>
-                <p class="card-text text-gray-400 mb-5">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
-              </div>
-              <div class="d-lg-flex justify-content-lg-between align-items-center d-block mb-5">
-                <a href="#" class="text-btn">Read More</a>
+        </div>
+        <div class="row Article-col">
+            <!-- Slider main container -->
+            <div class="col-12 col-lg-8 swiper myArticleswiper mb-7 mb-lg-3">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="card border-0 border-bottom border-1 border-gray-500 h-100 rounded-0">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="../assets/images/articles-1.png">
+                      <img class="w-100" src="../assets/images/articles-1-sm.png" class="card-img-top" alt="articles-1">
+                    </picture>
+                    <div class="card-body p-0 py-5">
+                      <h5 class="card-title text-gray-500 mb-1 text-truncate">私人島嶼的露營奇遇記</h5>
+                      <p class="card-text text-gray-400 mb-5">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-block mb-5">
+                      <a href="#" class="text-btn">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 border-bottom border-1 border-gray-500 h-100 rounded-0">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="../assets/images/articles-2.png">
+                      <img src="../assets/images/articles-2-sm.png" class="card-img-top" alt="articles-2">
+                    </picture>
+                    <div class="card-body p-0 py-5">
+                      <h5 class="card-title text-gray-500 mb-1 text-truncate">窺探米其林三星主廚的絕密手藝</h5>
+                      <p class="card-text text-gray-400 mb-5">在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-block mb-5">
+                      <a href="#" class="text-btn">Read More</a>
+                      <a href="#" class="member-btn btn btn-primary-300 text-primary-400">會員專屬</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 border-bottom border-1 border-gray-500 h-100 rounded-0">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="../assets/images/articles-1.png">
+                      <img class="w-100" src="../assets/images/articles-1-sm.png" class="card-img-top" alt="articles-1">
+                    </picture>
+                    <div class="card-body p-0 py-5">
+                      <h5 class="card-title text-gray-500 mb-1 text-truncate">私人島嶼的露營奇遇記</h5>
+                      <p class="card-text text-gray-400 mb-5">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-block mb-5">
+                      <a href="#" class="text-btn">Read More</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col d-lg-block d-none">
-            <div class="card border-0 border-bottom border-1 border-gray-500 h-100 rounded-0">
-              <picture>
-                <source media="(min-width: 992px)" srcset="../assets/images/articles-2.png">
-                <img src="../assets/images/articles-2-sm.png" class="card-img-top" alt="articles-2">
-              </picture>
-              <div class="card-body p-0 py-5">
-                <h5 class="card-title text-gray-500 mb-1">窺探米其林三星主廚的絕密手藝</h5>
-                <p class="card-text text-gray-400 mb-5">在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
-              </div>
-              <div class="d-lg-flex justify-content-lg-between align-items-center d-block mb-5">
-                <a href="#" class="text-btn">Read More</a>
-                <a href="#" class="member-btn btn btn-primary-300 text-primary-400">會員專屬</a>
-              </div>
+            <div class="col-12 col-lg-4 m-auto m-lg-0 Article-col-rel">
+              <h2 class="d-none d-lg-block fs-lg-2 fs-4">精選文章</h2>
+              <div class="Article-col-abs">
+                <!-- If we need pagination 頁數 -->
+                <div class="swiper-pagination f-newreader text-lg-start"></div>
+                <div class="swiper-nav-btn d-flex gap-4">
+                <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev-new swiper-btn">
+                    <i class="bi bi-arrow-left"></i>
+                  </div>
+                  <hr class="hr-line">
+                  <div class="swiper-button-next-new swiper-btn">
+                    <i class="bi bi-arrow-right"></i>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-Subscribe">
+    <section class="section-Subscribe overflow-hidden">
       <div class="bg-primary-200">
         <div class="container py-lg-10 py-8 position-relative">
           <div class="hito-content">
@@ -174,160 +215,161 @@
       <div class="container py-lg-10 py-8">
         <h2 class="fs-lg-2 fs-4 mb-lg-7 mb-5">大家都在看</h2>
         <div class="row">
-          <div class="col-lg-3 d-lg-block d-none">
-            <div class="focus-group bg-white box-shadow p-5 h-100">
-              <div class="list-group" id="list-tab" role="tablist">
-                <a class="mb-5 list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-focus1" role="tab" aria-controls="list-focus1">酒精路跑地圖</a>
-                <a class="mb-5 list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-focus2" role="tab" aria-controls="list-focus2">台北拉麵圖鑑</a>
-                <a class="mb-5 list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-focus3" role="tab" aria-controls="list-focus3">海島自由行</a>
-                <a class="mb-5 list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-focus4" role="tab" aria-controls="list-focus4">短天數出國推薦</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-focus5" role="tab" aria-controls="list-focus5">週末露營趣</a>
-              </div>
-            </div>
+          <div class="col-lg-3 d-lg-block d-none px-0">
+            <ul class="swiper-paginationFocus bg-white h-100">
+              <li data-slide="0">酒精路跑地圖</li>
+              <li data-slide="1">台北拉麵圖鑑</li>
+              <li data-slide="2">海島自由行</li>
+              <li data-slide="3">短天數出國推薦</li>
+              <li data-slide="4">週末露營趣</li>
+            </ul>
           </div>
           <div class="col-lg-9 col-12">
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="list-focus1" role="tabpanel" aria-labelledby="list-home-list">
-                <div class="focus-item bg-white p-lg-7 p-3">
-                  <div class="focus-txt p-lg-5 mb-3">
-                    <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">酒精路跑地圖</h3>
-                    <p class="mb-lg-4 mb-1">｜城市酒吧人氣榜,盤點當紅熱門酒吧</p>
-                    <p class="mb-lg-4 mb-1">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</p>
-                    <p>｜台南老宅手工酒藏,尋味百年人文釀意</p>
-                  </div>
-                  <div class="focus-pic text-center mb-3">
-                    <picture>
-                      <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
-                      <img src="../assets/images/hots-1-sm.png" alt="hots-1">
-                    </picture>
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
-                  </div>
-                  <div class="focus-label p-lg-5">
-                    <div class="d-lg-flex justify-content-lg-between d-block">
-                      <div class="p-1 p-3 mb-lg-0 mb-3">
-                        <span class="badge badge-btn me-3">#夜貓行程</span>
-                        <span class="badge badge-btn me-3">#barhopping</span>
-                        <span class="badge badge-btn">#全台酒吧</span>
+            <!-- Swiper Container -->
+            <div class="swiper myFocusswiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="focus-item bg-white p-lg-7 p-3">
+                    <div class="focus-txt p-lg-5 mb-3">
+                      <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">酒精路跑地圖</h3>
+                      <p class="mb-lg-4 mb-1">｜城市酒吧人氣榜,盤點當紅熱門酒吧</p>
+                      <p class="mb-lg-4 mb-1">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</p>
+                      <p>｜台南老宅手工酒藏,尋味百年人文釀意</p>
+                    </div>
+                    <div class="focus-pic text-center mb-3">
+                      <picture>
+                        <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
+                        <img src="../assets/images/hots-1-sm.png" alt="hots-1">
+                      </picture>
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
+                    </div>
+                    <div class="focus-label p-lg-5">
+                      <div class="d-lg-flex justify-content-lg-between d-block">
+                        <div class="p-1 p-3 mb-lg-0 mb-3">
+                          <span class="badge badge-btn me-3">#夜貓行程</span>
+                          <span class="badge badge-btn me-3">#barhopping</span>
+                          <span class="badge badge-btn">#全台酒吧</span>
+                        </div>
+                        <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                       </div>
-                      <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="list-focus2" role="tabpanel" aria-labelledby="list-focus2-list">
-                <div class="focus-item bg-white p-lg-7 p-3">
-                  <div class="focus-txt p-lg-5 mb-3">
-                    <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">台北拉麵圖鑑</h3>
-                    <p class="mb-lg-4 mb-1">｜城市酒吧人氣榜,盤點當紅熱門酒吧</p>
-                    <p class="mb-lg-4 mb-1">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</p>
-                    <p>｜台南老宅手工酒藏,尋味百年人文釀意</p>
-                  </div>
-                  <div class="focus-pic text-center mb-3">
-                    <picture>
-                      <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
-                      <img src="../assets/images/hots-3-sm.png" alt="hots-1">
-                    </picture>
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
-                  </div>
-                  <div class="focus-label p-lg-5">
-                    <div class="d-lg-flex justify-content-lg-between d-block">
-                      <div class="p-1 p-3 mb-lg-0 mb-3">
-                        <span class="badge badge-btn me-3">#雞白湯</span>
-                        <span class="badge badge-btn me-3">#拉麵</span>
-                        <span class="badge badge-btn">#台北美食</span>
+                <div class="swiper-slide">
+                  <div class="focus-item bg-white p-lg-7 p-3">
+                    <div class="focus-txt p-lg-5 mb-3">
+                      <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">台北拉麵圖鑑</h3>
+                      <p class="mb-lg-4 mb-1">｜城市酒吧人氣榜,盤點當紅熱門酒吧</p>
+                      <p class="mb-lg-4 mb-1">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</p>
+                      <p>｜台南老宅手工酒藏,尋味百年人文釀意</p>
+                    </div>
+                    <div class="focus-pic text-center mb-3">
+                      <picture>
+                        <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
+                        <img src="../assets/images/hots-3-sm.png" alt="hots-1">
+                      </picture>
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
+                    </div>
+                    <div class="focus-label p-lg-5">
+                      <div class="d-lg-flex justify-content-lg-between d-block">
+                        <div class="p-1 p-3 mb-lg-0 mb-3">
+                          <span class="badge badge-btn me-3">#雞白湯</span>
+                          <span class="badge badge-btn me-3">#拉麵</span>
+                          <span class="badge badge-btn">#台北美食</span>
+                        </div>
+                        <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                       </div>
-                      <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="list-focus3" role="tabpanel" aria-labelledby="list-focus3-list">
-                <div class="focus-item bg-white p-lg-7 p-3">
-                  <div class="focus-txt p-lg-5 mb-3">
-                    <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">海島自由行</h3>
-                    <p class="mb-lg-4 mb-1">｜私島慢活島嶼生活 - 在熱帶天堂品...</p>
-                    <p class="mb-lg-4 mb-1">｜海島漂流記 - 在陽光、沙灘和比基...</p>
-                    <p>｜島嶼蹤跡 - 揭開加勒比海上世外桃...</p>
-                  </div>
-                  <div class="focus-pic text-center mb-3">
-                    <picture>
-                      <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
-                      <img src="../assets/images/hots-4-sm.png" alt="hots-1">
-                    </picture>
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
-                  </div>
-                  <div class="focus-label p-lg-5">
-                    <div class="d-lg-flex justify-content-lg-between d-block">
-                      <div class="p-1 p-3 mb-lg-0 mb-3">
-                        <span class="badge badge-btn me-3">#熱帶國家</span>
-                        <span class="badge badge-btn me-3">#海邊</span>
-                        <span class="badge badge-btn">#無敵海景</span>
+                <div class="swiper-slide">
+                  <div class="focus-item bg-white p-lg-7 p-3">
+                    <div class="focus-txt p-lg-5 mb-3">
+                      <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">海島自由行</h3>
+                      <p class="mb-lg-4 mb-1">｜私島慢活島嶼生活 - 在熱帶天堂品...</p>
+                      <p class="mb-lg-4 mb-1">｜海島漂流記 - 在陽光、沙灘和比基...</p>
+                      <p>｜島嶼蹤跡 - 揭開加勒比海上世外桃...</p>
+                    </div>
+                    <div class="focus-pic text-center mb-3">
+                      <picture>
+                        <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
+                        <img src="../assets/images/hots-4-sm.png" alt="hots-1">
+                      </picture>
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
+                    </div>
+                    <div class="focus-label p-lg-5">
+                      <div class="d-lg-flex justify-content-lg-between d-block">
+                        <div class="p-1 p-3 mb-lg-0 mb-3">
+                          <span class="badge badge-btn me-3">#熱帶國家</span>
+                          <span class="badge badge-btn me-3">#海邊</span>
+                          <span class="badge badge-btn">#無敵海景</span>
+                        </div>
+                        <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                       </div>
-                      <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="list-focus4" role="tabpanel" aria-labelledby="list-focus4-list">
-                <div class="focus-item bg-white p-lg-7 p-3">
-                  <div class="focus-txt p-lg-5 mb-3">
-                    <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">短天數出國推薦</h3>
-                    <p class="mb-lg-4 mb-1">｜72小時東京遊走 - 當個時尚東京通</p>
-                    <p class="mb-lg-4 mb-1">｜48小時曼谷遊玩全攻略</p>
-                    <p>｜三天兩夜賞櫻微醺東京</p>
-                  </div>
-                  <div class="focus-pic text-center mb-3">
-                    <picture>
-                      <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
-                      <img src="../assets/images/hots-5-sm.png" alt="hots-1">
-                    </picture>
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
-                  </div>
-                  <div class="focus-label p-lg-5">
-                    <div class="d-lg-flex justify-content-lg-between d-block">
-                      <div class="p-1 p-3 mb-lg-0 mb-3">
-                        <span class="badge badge-btn me-3">說走就走</span>
-                        <span class="badge badge-btn me-3">#出國玩</span>
-                        <span class="badge badge-btn">#東亞</span>
+                <div class="swiper-slide">
+                  <div class="focus-item bg-white p-lg-7 p-3">
+                    <div class="focus-txt p-lg-5 mb-3">
+                      <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">短天數出國推薦</h3>
+                      <p class="mb-lg-4 mb-1">｜72小時東京遊走 - 當個時尚東京通</p>
+                      <p class="mb-lg-4 mb-1">｜48小時曼谷遊玩全攻略</p>
+                      <p>｜三天兩夜賞櫻微醺東京</p>
+                    </div>
+                    <div class="focus-pic text-center mb-3">
+                      <picture>
+                        <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
+                        <img src="../assets/images/hots-5-sm.png" alt="hots-1">
+                      </picture>
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
+                    </div>
+                    <div class="focus-label p-lg-5">
+                      <div class="d-lg-flex justify-content-lg-between d-block">
+                        <div class="p-1 p-3 mb-lg-0 mb-3">
+                          <span class="badge badge-btn me-3">#說走就走</span>
+                          <span class="badge badge-btn me-3">#出國玩</span>
+                          <span class="badge badge-btn">#東亞</span>
+                        </div>
+                        <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                       </div>
-                      <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="list-focus5" role="tabpanel" aria-labelledby="list-focus5-list">
-                <div class="focus-item bg-white p-lg-7 p-3">
-                  <div class="focus-txt p-5 mb-3">
-                    <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">周末露營趣</h3>
-                    <p class="mb-lg-4 mb-1">｜週末說走就走露營記</p>
-                    <p class="mb-lg-4 mb-1">｜城市野營日記</p>
-                    <p>｜和寵物去露營 - 大自然之旅的雙倍...</p>
-                  </div>
-                  <div class="focus-pic text-center mb-3">
-                    <picture>
-                      <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
-                      <img src="../assets/images/read-1-sm.png" alt="hots-1">
-                    </picture>
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
-                    <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
-                  </div>
-                  <div class="focus-label p-lg-5">
-                    <div class="d-lg-flex justify-content-lg-between d-block">
-                      <div class="p-1 p-3 mb-lg-0 mb-3">
-                        <span class="badge badge-btn me-3">#戶外</span>
-                        <span class="badge badge-btn me-3">#露營控</span>
-                        <span class="badge badge-btn">#凹豆</span>
+                <div class="swiper-slide">
+                  <div class="focus-item bg-white p-lg-7 p-3">
+                    <div class="focus-txt p-lg-5 mb-3">
+                      <h3 class="fs-lg-4 fs-5 text-accent-200 mb-lg-5 mb-2">周末露營趣</h3>
+                      <p class="mb-lg-4 mb-1">｜週末說走就走露營記</p>
+                      <p class="mb-lg-4 mb-1">｜城市野營日記</p>
+                      <p>｜和寵物去露營 - 大自然之旅的雙倍...</p>
+                    </div>
+                    <div class="focus-pic text-center mb-3">
+                      <picture>
+                        <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
+                        <img src="../assets/images/hots-5-sm.png" alt="hots-1">
+                      </picture>
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-3.png" alt="hots-3">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-2.png" alt="hots-2">
+                      <img class="d-lg-inline-block d-none" src="../assets/images/hots-4.png" alt="hots-4">
+                    </div>
+                    <div class="focus-label p-lg-5">
+                      <div class="d-lg-flex justify-content-lg-between d-block">
+                        <div class="p-1 p-3 mb-lg-0 mb-3">
+                          <span class="badge badge-btn me-3">#戶外</span>
+                          <span class="badge badge-btn me-3">#露營控</span>
+                          <span class="badge badge-btn">#凹豆</span>
+                        </div>
+                        <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                       </div>
-                      <a class="text-btn d-flex justify-content-center align-items-center" href="#">View More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
@@ -390,47 +432,47 @@
         </div>
       </div>
     </section>
-
+    
     <section class="section-Proposal">
       <div class="bg-primary-200">
-        <div class="container py-lg-10 py-8">
+        <div class="container py-12">
           <div class="row row-cols-lg-2 row-cols-1 gy-8">
-            <div class="col">
+            <div class="col d-lg-flex align-items-center">
               <div class="text-lg-start text-center">
                 <p class="text-gray-400 fw-bold mb-3">今天又不知道要去哪裡了嗎？</p>
                 <div class="d-lg-flex mb-lg-6 mb-5">
-                  <h2 class="fs-lg-2 fs-4 mb-1">Vivre</h2>
-                  <h2 class="fs-lg-2 fs-4">　給你意想不到的生活風格提案</h2>
+                  <h2 class="fs-lg-2 fs-4 mb-1">Vivre
+                    <br class="d-md-none">給你意想不到的生活風格提案
+                  </h2>
                 </div>
                 <button class="btn btn-green-i" type="button">馬上訂閱<i class="bi bi-arrow-right ms-2"></i></button>
               </div>
             </div>
             <div class="col">
-              <div class="row gy-lg-0 gy-5">
+              <div class="row">
                 <div class="col">
-                  <div class="my-lg-10">
-                    <div class="position-relative mb-lg-7">
-                      <img class="w-100" src="../assets/images/projects-2.png" alt="projects-2">
-                      <button class="proposal-btn position-absolute top-0 start-25 translate-middle"><i class="bi bi-play-fill me-1"></i>人氣行程</button>
-                      <a class="position-absolute bottom-0 left-0 w-100 text-primary-100 fw-bold d-flex justify-content-between p-2" href="#">親子露營要帶什麼？<i class="bi bi-arrow-right text-primary-100"></i></a>
-                    </div>
-                    <div class="position-relative mb-lg-7">
-                      <img class="w-100" src="../assets/images/projects-4.png" alt="projects-4">
-                      <button class="proposal-btn position-absolute top-0 start-25 translate-middle"><i class="bi bi-play-fill me-1"></i>編輯推薦</button>
-                      <a class="position-absolute bottom-0 left-0 w-100 text-primary-100 fw-bold d-flex justify-content-between p-2" href="#">質感房間改造攻略！<i class="bi bi-arrow-right text-primary-100"></i></a>
-                    </div>
+                  <div class="position-relative mt-lg-9 mb-7">
+                    <img class="w-100" src="../assets/images/projects-2.png" alt="projects-2">
+                    <button class="proposal-btn position-absolute top-0 start-25 translate-middle"><i class="bi bi-play-fill me-1"></i>人氣行程</button>
+                    <a class="position-absolute bottom-0 left-0 w-100 text-primary-100 fw-bold d-flex justify-content-between p-2" href="#">親子露營要帶什麼？<i class="bi bi-arrow-right text-primary-100"></i></a>
+                  </div>
+                  <div class="position-relative mb-7">
+                    <img class="w-100" src="../assets/images/projects-4.png" alt="projects-4">
+                    <button class="proposal-btn position-absolute top-0 start-25 translate-middle"><i class="bi bi-play-fill me-1"></i>編輯推薦</button>
+                    <a class="position-absolute bottom-0 left-0 w-100 text-primary-100 fw-bold d-flex justify-content-between p-2" href="#">質感房間改造攻略！<i class="bi bi-arrow-right text-primary-100"></i></a>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="position-relative mb-lg-7">
+                  <div class="position-relative mt-lg-4 mb-7">
                     <img class="w-100" src="../assets/images/projects-1.png" alt="projects-1">
                     <button class="proposal-btn position-absolute top-0 start-25 translate-middle"><i class="bi bi-play-fill me-1"></i>編輯推薦</button>
                     <a class="position-absolute bottom-0 left-0 w-100 text-primary-100 fw-bold d-flex justify-content-between p-2" href="#">山女孩的健行筆記<i class="bi bi-arrow-right text-primary-100"></i></a>
                   </div>
-                  <div class="position-relative mb-lg-7">
+                  <div class="position-relative mb-7">
                     <img class="w-100" src="../assets/images/projects-3.png" alt="projects-3">
                     <button class="proposal-btn position-absolute top-0 start-25 translate-middle"><i class="bi bi-play-fill me-1"></i>熱門文章</button>
                     <a class="position-absolute bottom-0 left-0 w-100 text-primary-100 fw-bold d-flex justify-content-between p-2" href="#">適合溜小孩的海邊景點推薦<i class="bi bi-arrow-right text-primary-100"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -438,7 +480,7 @@
         </div>
       </div>
     </section>
-
+    
     <section class="section-submit">
       <div class="container py-lg-10 py-8 border-bottom border-1 1px border-neutral-300">
         <div class="d-lg-flex justify-content-between d-block text-center">
@@ -455,6 +497,7 @@
 
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
   </body>
 </html>

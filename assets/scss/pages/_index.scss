@@ -4,7 +4,7 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       top: auto;
       bottom: 0;
     }
@@ -40,7 +40,7 @@
       transform: translate(-50%, -50%);
       font-weight: $font-weight-bolder;
   
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
         font-weight: $font-weight-bold;
       }
     }
@@ -62,7 +62,7 @@
       height: 81px;
       background-image: url("../images/bg-1.png");
 
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
         display: none;
       }
     }
@@ -76,7 +76,7 @@
       height: 196px;
       background-image: url("../images/bg-2.png");
 
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
         right: -50px;
         width: 160px;
         height: 104px;
@@ -85,50 +85,61 @@
       }
     }
     p{
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
         color: $accent-200;
       }
     }
   }
 }
 
-
 .section-Focus{
-  .focus-group, .focus-item{
+  .focus-item{
     border-radius: 12px;
   }
 
   // 左側清單
-  .box-shadow{
+  //section-Focus swiper-paginationFocus
+  .swiper-paginationFocus{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 24px;
+    border-radius: 12px;
     box-shadow: 0px 2px 8px 0px #6E6B6714;
   }
-  .list-group-item::before{
-    content: '•';
-    width: 20px;
-    margin-right: 10px;
-  }
 
-  .list-group-item{
-    font-size: 20px;
+  .swiper-pagination-bullet{
+    width: auto;
+    height: 56px;
+    opacity: 1;
+    font-size: $h5-font-size;
     font-weight: $font-weight-bolder;
-    background-color: $white;
-    color: $gray-900;
-    padding: 16px 0 16px 16px;
-    border: 0;
+    padding: 16px;
     border-radius: 4px;
+    background-color: $white;
+    color: $neutral-600;
+
+    @media (max-width: 1199px) {
+      font-size: $h6-font-size; /*須更正*/
+    }
   }
-  .list-group-item:hover{
-    color: $accent-200;
+  .swiper-pagination-bullet::before{
+    content: '•';
+    // width: 20px;
+    margin-right: 1px;
   }
-  .list-group-item.active{
+  .swiper-pagination-bullet-active {
     background-color: $accent-100;
+  }
+  .swiper-pagination-bullet:hover {
+    color: $accent-200;
   }
 
   // 右側圖片
   .focus-pic :first-child img { /*第一個子元素的內的img元素*/
     border-radius: 20px 0px 4px 20px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       border-radius: 4px;
       width: 100%;
     }
@@ -148,8 +159,59 @@
   h3{
     font-size: 52px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       font-size: 40px;
     }
   }
 }
+
+// 定位
+.section-Article{
+  .Article-col {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .Article-col-rel{
+    position: relative;
+
+    @media (max-width: 991px) {
+      position: static;
+    }
+  }
+  
+  .Article-col-abs {
+    position: absolute;
+    bottom: 0;
+
+    @media (max-width: 991px) {
+      position: static;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .swiper-pagination {
+    position: static;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 0;
+
+    }
+  }
+  .swiper-btn{
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 100px;
+    border: 1px solid #6C757D;
+  }
+  
+  .hr-line{
+    width: 80px;
+    height: 1px;
+    color: $neutral-400;
+  }
+}
+

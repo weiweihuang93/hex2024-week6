@@ -12,6 +12,7 @@ i{
     color: inherit;
     display: inline-block;
     font-size: $h4-font-size;
+    line-height: 0;
 
     @media (max-width: 992px) {
         font-size: $h5-font-size;
