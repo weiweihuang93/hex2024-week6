@@ -2,8 +2,8 @@ import './assets/scss/all.scss';
 
 console.log("Hello world!");
 
-const myArticleswiper = new Swiper('.myArticleswiper', {
-
+const Switcherswiper = new Swiper('.Switcherswiper', {
+    loop: true, // 啟用回到起點模式
     slidesPerView: 1,
     spaceBetween: 24,
 
@@ -30,8 +30,9 @@ const myArticleswiper = new Swiper('.myArticleswiper', {
   });
 
 const myFocusswiper = new Swiper(".myFocusswiper", {
+  loop: true, // 啟用回到起點模式
   slidesPerView: 1,
-  spaceBetween: 24,
+  // spaceBetween: 24,
 
   pagination: {
     el: ".swiper-paginationFocus",
@@ -41,4 +42,21 @@ const myFocusswiper = new Swiper(".myFocusswiper", {
       return `<li class="${className}">${labels[index]}</li>`;
     },
   },
+  });
+
+  const seSlideSwiper = new Swiper(".seSlideSwiper", {
+    loop: true, // 啟用回到起點模式
+    // 媒体查询配置
+    breakpoints: {
+        // 当窗口宽度 >= 320px 时
+        320: {
+        slidesPerView: 1,
+        direction: "horizontal",
+        },
+        768: {
+          slidesPerView: 3,
+          direction: "vertical",
+        },
+  
+    },
   });
