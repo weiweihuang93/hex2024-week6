@@ -2,57 +2,20 @@
 
 header{
   .navbar > .container{
-      flex-wrap: wrap;
-  }
-  .navbar-expand-lg{
-    .container{
-      border-bottom: 1px solid $gray-500;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $neutral-500;
 
-      @media (max-width: 991px) {
-        border: 0;
-      }
+    @media (max-width: 991px) {
+      border: 0;
     }
   }
 }
 
 header{
-  .form-control{
-    border: 1px solid $neutral-200;
-    border-radius: 100px;
-    padding: 0.75rem 1.25rem;
-  }
-  .a-search{
+  .a-bi-search{
     position: relative;
     left: -48px;
   }
-}
-
-header{
-  .navbar-collapse{
-    @media (max-width: 991px) {
-      margin-top: 24px;
-    }
-  }
-}
-
-header{
-  .navbar-expand-lg{
-    .navbar-nav{
-      gap: 20px;
-      margin-right: 20px;
-
-      @media (max-width: 991px) {
-        margin: 24px 0 40px;
-      }
-    }
-      .nav-link{
-        color: $neutral-500;
-        font-weight: $font-weight-bold;
-      }
-      .nav-link:hover{
-        color: $accent-200;
-    }
-  } 
 }
 
 header{

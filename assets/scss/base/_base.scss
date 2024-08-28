@@ -11,12 +11,13 @@ a{
 i{
     color: inherit;
     display: inline-block;
-    font-size: $h4-font-size;
-    line-height: 0;
+    // font-size: $h4-font-size;
+    font-size: inherit;
+    line-height: inherit;
 
-    @media (max-width: 992px) {
-        font-size: $h5-font-size;
-    }
+    // @media (max-width: 992px) {
+    //     font-size: $h5-font-size;
+    // }
 }
 
 h1,
@@ -33,14 +34,16 @@ p{
 
 .btn-green{
     font-size: $h5-font-size;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-bolder;
+    letter-spacing: 0.1em;
     background-color: $accent-200;
     color: $white;
     padding: 16px 24px;
 
     @media (max-width: 992px) {
-        padding: 12px 20px;    
         font-size: $h6-font-size;
+        font-weight: $font-weight-bold;
+        padding: 12px 20px;
     }
 }
 .btn-green:hover{
@@ -48,40 +51,35 @@ p{
     color: $white;
 }
 
-.btn-green-i{
-    font-size: $h5-font-size;
-    font-weight: $font-weight-bolder;
-    background-color: $accent-200;
-    color: $white;
-    padding: 16px 24px;
-
-    @media (max-width: 992px) {
-        padding: 12px 20px;    
-        font-size: $h6-font-size;
-    }
-}
-.btn-green-i:hover{
-    background: $accent-300;
-    color: $white;
+/*不要更改順序*/
+.login{
+    font-size: $h6-font-size;
+    font-weight: $font-weight-bold;
 }
 
+/*會員專屬*/
 .member-btn{
-    padding: 4px 8px;
-    border-radius: 4px;
-}
-
-@media (max-width: 992px) {
-    .btn-green-sm{
-        padding: 12px 20px;    
-        font-size: $h6-font-size;
-    }
-}
-
-.badge-btn{
+    font-weight: $font-weight-bold;
+    line-height: $line-height-xs;
+    letter-spacing: 0.1em;
     background-color: $primary-300;
     color: $primary-400;
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+.badge-btn{
+    font-size: $h6-font-size;
+    line-height: $line-height-xs;
+    letter-spacing: 0.1em;
+    background-color: $primary-300;
+    color: $primary-400;
+    padding: 4px 8px;
+    border-radius: 4px;
+
+    @media (max-width: 992px) {
+        font-size: $h7-font-size;
+    }
 }
 .badge-btn:hover{
     background-color: $primary-400;
@@ -91,11 +89,14 @@ p{
 .text-btn{
     font-size: $h5-font-size;
     font-weight: $font-weight-bold;
+    line-height: $line-height-xs;
+    letter-spacing: 0.1em;
     color: $accent-200;
-    padding: 8px 0;
+    padding: 10px 0;
 
     @media (max-width: 992px) {
-        padding: 10px 0;
+        font-size: $h6-font-size;
+        padding: 8px 0;
     }
 }
 .text-btn:hover{
@@ -114,6 +115,27 @@ p{
     }
 }
 
-.start-25{
-    left: 25% !important;
+//
+
+.flex-fill {
+    flex: 1;
+}
+
+.swiper-btn{
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 100px;
+    border: 1px solid #6C757D;
+
+    &:hover{
+      background: $neutral-400;
+      color: $white;
+    }
+}
+
+.hr-line{
+    width: 80px;
+    height: 1px;
+    color: $neutral-400;
+    opacity: 1;
 }
