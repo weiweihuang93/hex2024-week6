@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script type="module" crossorigin src="/hex2024-week6/assets/main-09c86a22.js"></script>
+  <link rel="stylesheet" href="/hex2024-week6/assets/main-6b53efed.css">
+</head>
+<body>
+    <header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container py-lg-6 py-1">
+      <a class="navbar-brand me-6" href="index.html">
+        <picture>
+          <source media="(min-width: 992px)" srcset="/hex2024-week6/assets/logo-ee8c81a3.svg ">
+          <img src="/hex2024-week6/assets/logo-sm-6caeb21a.svg" alt="logo.svg">
+        </picture>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <button class="btn-close" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" ></button> -->
+      <div class="collapse navbar-collapse mt-5 mt-lg-0" id="navbarSupportedContent">
+        <form class="d-flex me-auto" role="search">
+          <input class="form-control bg-white rounded-pill border-1 border-neutral-200 py-2 px-4" type="search" placeholder="搜尋文章" aria-label="Search">
+          <a class="a-bi-search d-flex align-items-center" type="button" href="#">
+            <i class="bi bi-search text-accent-200"></i>
+          </a>
+        </form>
+        <ul class="navbar-nav navbar-expand-lg gap-lg-4 me-lg-4 mt-lg-0 mb-lg-0 gap-6 mt-6 mb-7">
+          <li class="nav-item">
+            <a class="nav-link text-neutral-500 fw-bold px-lg-4 py-lg-1 p-2" href="article.html">所有文章</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-neutral-500 fw-bold px-lg-4 py-lg-1 p-2" href="#">訂閱方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-neutral-500 fw-bold px-lg-4 py-lg-1 p-2" href="#">關於我們</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-green login"><a href="register.html">登入 / 註冊</a></button>
+      </div>
+    </div>
+  </nav>
+</header>
+    <section>
+      <div class="container py-lg-11 py-9">
+        <div class="row justify-content-center">
+          <div class="col-6 p-lg-7 p-5 bg-white border border-primary-300 border-radius-2">
+            <form class="d-flex flex-column gap-lg-7 gap-5">
+              <fieldset>
+                <legend class="text-accent-200 fw-bolder mb-7">註冊</legend>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label fw-bold mb-lg-2 mb-1">會員帳號</label>
+                  <input type="text" id="disabledTextInput" class="form-control bg-neutral-100 border-radius-lg border-0 py-2 px-3" placeholder="請輸入會員帳號">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label fw-bold mb-lg-2 mb-1">密碼</label>
+                  <input type="text" id="disabledTextInput" class="form-control bg-neutral-100 border-radius-lg border-0 py-2 px-3" placeholder="請輸入密碼">
+                </div>
+                <div>
+                  <label for="exampleInputEmail1" class="form-label fw-bold mb-lg-2 mb-1">電子信箱</label>
+                  <input type="text" id="disabledTextInput" class="form-control bg-neutral-100 border-radius-lg border-0 py-2 px-3" placeholder="請輸入電子信箱">
+                </div>
+              </fieldset>
+              <button class="btn btn-sign w-100" type="button">立即註冊<i class="bi bi-arrow-right ms-2"></i></button>
+              <div class="other d-flex align-items-center gap-2">
+                <hr class="border border-neutral-200 flex-fill">
+                <p class="text-neutral-300">或以其他方式註冊</p>
+                <hr class="border border-neutral-200 flex-fill">
+              </div>
+              <div class="other-sign">
+                <button class="btn btn-othersign w-100 mb-1" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==" alt="icons-google">使用 Google 註冊</button>
+                <button class="btn btn-othersign w-100" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg==" alt="icons-facebook">使用 Facebook 註冊</button>
+              </div>
+              <div class="other-login d-flex justify-content-center gap-2">
+                <p>已經是會員了？</p>
+                <a href="login.html" class="link-accent-200">點此登入</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+    <div class="container p-4 p-lg-5 border-top border-1 1px border-gray-300">
+        <p class="f-newreader text-center text-primary-400">©Vivre 2024 All right Reserved</p>
+    </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
